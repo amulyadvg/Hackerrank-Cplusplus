@@ -1,0 +1,22 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() 
+{
+    int arr[10000], m;
+    int result = 0;
+    
+    cin >> m;
+    
+    for (int i=0; i < m; i++) {
+        cin >> arr[i];
+    }
+    
+    for (int i=0; i < m; i++) {
+        result += arr[i];
+    }
+    cout << result << endl;
+    return 0;
+}
