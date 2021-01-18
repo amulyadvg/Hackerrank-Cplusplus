@@ -1,0 +1,11 @@
+// Only the function is printed here
+
+long aVeryBigSum(vector<long> ar) {
+
+    long signed sum = 0;
+    for (long signed i = 0; i < ar.size(); i++){
+        sum += ar[i];
+    }
+    cout << sum << endl;
+    return sum;
+}
