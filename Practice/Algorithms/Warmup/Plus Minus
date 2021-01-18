@@ -1,0 +1,24 @@
+// Only the function result is printed here
+
+void plusMinus(vector<int> arr) {
+    float pos, neg, zer = 0;
+    long int num = arr.size();
+    
+    for (int i=0; i < num; i++) {
+        cin >> arr[i];
+    }
+    for (int i=0; i < num; i++) {
+        if (arr[i] > 0) {
+            pos++;
+        }
+        else if (arr[i] < 0) {
+            neg++;
+        }
+        else if (arr[i] == 0) {
+            zer++;
+        }
+    }
+    cout << pos/num << endl;
+    cout << neg/num << endl;
+    cout << zer/num << endl;
+}
